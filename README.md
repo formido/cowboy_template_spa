@@ -1,9 +1,12 @@
+## Build release in development
+
+    relx -d
+
 ## Start project in development
 
-    erl -pa $PWD/deps/*/ebin -pa $PWD/ebin -boot _rel/releases/1/erl_api_mock
+    erl -pa $PWD/deps/*/ebin -pa $PWD/ebin -boot _rel/cowboy_template/releases/1/cowboy_template 
 
-...then:
+## Auto reload modules as you save them by [installing Sync](https://github.com/rustyio/sync)
 
     > sync:go().
 
-...to automatically reload erlang code modules as you edit them.
