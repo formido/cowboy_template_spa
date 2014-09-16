@@ -1,0 +1,15 @@
+%% Feel free to use, reuse and abuse the code in this file.
+
+{application, cowboy_template, [
+	{description, "Cowboy template for SPA."},
+	{vsn, "1"},
+	{modules, []},
+	{registered, [cowboy_template_sup]},
+	{applications, [
+		kernel,
+		stdlib,
+		cowboy
+	]},
+	{mod, {cowboy_template_app, []}},
+	{env, []}
+]}.
