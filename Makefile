@@ -1,6 +1,3 @@
-PROJECT = erl_api_mock
- 
+PROJECT = cowboy_template
 DEPS = cowboy
-dep_cowboy = pkg://cowboy master
- 
 include erlang.mk
